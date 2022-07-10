@@ -1,16 +1,9 @@
 #include <iostream>
 #include <string>
 #include "uci/ucio.hpp"
+#include "uci/uciloop.hpp"
 
 int main() {
-    std::string gui = "";
-    while(true) {
-        std::cin >> gui;
-        if(gui == "uci") {
-            uprint("id name Chengine");
-            uprint("id author Samuel K");
-            uprint("uciok");
-        }
-    }
+    uciloop();
     return 0;
 }
