@@ -1,24 +1,35 @@
 #include "uciio.hpp"
 #include <iostream>
 #include <string>
+#include <vector>
 
 void uciloop() {
     std::string gui = "";
     bool uciok = false;
     while(1) {
-        std::cin >> gui;
-        if(gui == "uci") {
-            uprint("id name Chengine");
-            uprint("id author Samuel K");
-            uprint("uciok");
-            uciok = true;
+        std::getline(std::cin, gui);
+        std::vector<std::string> sgui = split(gui, " ");
+        std::string fgui = sgui[0];
+        if(fgui == "uci") {
+            if(!uciok) {
+                uprint("id name Chengine");
+                uprint("id author Samuel K (Rosidae)");
+                uprint("uciok");
+                uciok = true;
+            } else {
+                uprint("uciok");
+                uprint("info string (you have already specified a uci format?)");
+            }
         }
-        if(gui == "isready") {
+        if(fgui == "isready") {
             if(uciok) uprint("readyok");
         }
-        if(gui == "go depth 15") {
-            uprint("info score cp -95 depth 1 nodes 100000");
+        if(fgui == "go") {
             uprint("bestmove d7d5");
+            uprint(gui);
+        }
+        if(fgui == "quit") {
+            break;
         }
     }
 }
