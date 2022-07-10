@@ -26,7 +26,6 @@ void uciloop() {
         }
         if(fgui == "go") {
             uprint("bestmove d7d5");
-            uprint(gui);
         }
         if(fgui == "quit") {
             break;

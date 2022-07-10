@@ -16,4 +16,12 @@ std::vector<std::string> split(std::string cmd, std::string delim) {
     ret.push_back(cmd);
     return ret;
 }
+
+template <typename T> std::vector<T> slice(std::vector<T> v, int start, int end) {
+    std::vector<T> ret;
+    for (int i = start; i < end; i++) {
+        ret.push_back(v[i]);
+    }
+    return ret;
+}
 #endif
