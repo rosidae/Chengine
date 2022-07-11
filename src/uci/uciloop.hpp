@@ -16,7 +16,7 @@ void uciloop() {
         int depth = 10;
         if(fgui == "uci") {
             if(!uciok) {
-                uprint("id name Chengine");
+                uprint("id name Chengine (" + getversion() + ")");
                 uprint("id author Samuel K (Rosidae)");
                 uprint("uciok");
                 uciok = true;
