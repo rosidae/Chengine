@@ -5,11 +5,11 @@ class board {
 public:
     board() {}
     std::vector<int> pbb;
-    bool WshortCastle = true;
-    bool WlongCastle = true;
-    bool BshortCastle = true;
-    bool BlongCastle = true;
-    bool halfmoveClock = 0;
-    int fullmoveNumber = 1;
+    bool wsc = true;
+    bool wlc = true;
+    bool bsc = true;
+    bool blc = true;
+    bool hmclock = 0;
+    int fmclock = 1;
 };
 #endif

@@ -1,3 +1,5 @@
+#ifndef INC_UCILOOP
+  #define INC_UCILOOP
 #include "uciio.hpp"
 #include <iostream>
 #include <string>
@@ -32,3 +34,4 @@ void uciloop() {
         }
     }
 }
+#endif
