@@ -48,4 +48,8 @@ char charfrompiece(int in) {
     default: return ' ';
   }
 }
+
+bool validpawnmove(board b, int from, int to, int color) {
+  
+}
 #endif
