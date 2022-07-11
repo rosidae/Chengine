@@ -13,6 +13,7 @@
 #define BQ 0x15
 #define BK 0x16
 #define EMPTY 0x00
+#include "board.hpp"
 
 int piecefromchar(char in) {
   switch(in) {
@@ -49,7 +50,13 @@ char charfrompiece(int in) {
   }
 }
 
-bool validpawnmove(board b, int from, int to, int color) {
+bool validatemove(board b, square from, square to, int piece) {
+  if(from_piece == EMPTY) {
+    return false;
+  }
+  if(piece == WP || piece == BP) {
+    if()
+  }
   return false;
 }
 #endif
