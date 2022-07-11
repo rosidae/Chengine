@@ -8,4 +8,4 @@ Chengine is a UCI chess engine.
 Currently the project is a very early work-in-progress.
 
 
-- rosidae.
+\- rosidae.
