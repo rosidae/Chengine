@@ -3,9 +3,21 @@
 #include "uci/ucio.hpp"
 #include "uci/uciloop.hpp"
 #include "chess/fen.hpp"
+#include "chess/board.hpp"
 
 int main() {
     uciloop();
-    parse_fen("8/5k2/3p4/1p1Pp2p/pP2Pp1P/P4P1K/8/8 b - - 99 50");
+    for(int i = 0; i < defaultboard.pbb.size(); i++) {
+        if(i==0) {
+            std::cout << "|";
+        }
+        std::cout << charfrompiece(defaultboard.pbb[i]) << " ";
+        if(i % 8 == 7) {
+            std::cout << "|";
+            std::cout << "\n";
+            if(i!=63) std::cout << "|";
+        }
+        
+    }
     return 0;
 }
