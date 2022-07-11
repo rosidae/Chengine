@@ -50,6 +50,6 @@ char charfrompiece(int in) {
 }
 
 bool validpawnmove(board b, int from, int to, int color) {
-  
+  return false;
 }
 #endif
