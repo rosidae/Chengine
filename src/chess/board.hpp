@@ -27,6 +27,9 @@ public:
         sq.color = sq.y % 2 == 0 ? true : false;
         return sq;
     }
+    int getpiecefromsquare(square pos) {
+      
+    }
 };
 
 board defaultboard = parse_fen("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1");

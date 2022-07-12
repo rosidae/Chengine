@@ -51,11 +51,19 @@ char charfrompiece(int in) {
 }
 
 bool validatemove(board b, square from, square to, int piece) {
-  if(from_piece == EMPTY) {
+  if(piece == EMPTY) {
     return false;
   }
   if(piece == WP || piece == BP) {
-    if()
+    if(from.x == to.x && from.y+1 == to.y) {
+      return true;
+    }
+    if(from.x == to.x && from.y == to.y+2) {
+      if(from.y == 2 || from.y == 6) {
+        return true;
+      }
+      return false;
+    }
   }
   return false;
 }
