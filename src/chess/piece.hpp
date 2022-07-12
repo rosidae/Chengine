@@ -72,11 +72,11 @@ bool validatemove(board b, square from, square to, int piece) {
     }
     if(from.x+1 == to.x && from.y+1 == to.y) {
       if(b.getpiecefromsquare(to) != EMPTY) return true;
-      return false
+      return false;
     }
     if(from.x+1 == to.x && from.y-1 == to.y) {
       if(b.getpiecefromsquare(to) != EMPTY) return true;
-      return false
+      return false;
     }
   }
   return false;
