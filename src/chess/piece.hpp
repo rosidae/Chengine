@@ -70,7 +70,12 @@ bool validatemove(board b, square from, square to, int piece) {
       }
       return false;
     }
-    if(from.x == )
+    if(from.x+1 == to.x && from.y+1 == to.y) {
+      return true;
+    }
+    if(from.x+1 == to.x && from.y-1 == to.y) {
+      return true;
+    }
   }
   return false;
 }
