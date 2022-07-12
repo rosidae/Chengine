@@ -25,10 +25,16 @@ public:
     square getsquarepos(int pos) {
         square sq(pos % 8, pos / 8);
         sq.color = sq.y % 2 == 0 ? true : false;
+        sq.x++;
+        sq.y++;
         return sq;
     }
     int getpiecefromsquare(square pos) {
-      
+        int x = pos.x-1;
+        int y = pos.y-1;
+        int final = x + (y * 8);
+        if(final>64) return -1;
+        return pbb[final];
     }
 };
 
