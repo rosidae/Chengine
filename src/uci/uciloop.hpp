@@ -36,7 +36,6 @@ void uciloop() {
                     uprint("info string invalid depth parameter, must be a number");
                 }
             }
-            uprint("bestmove d7d5");
         }
         if(fgui == "quit") {
             break;
