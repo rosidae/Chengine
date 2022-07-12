@@ -2,6 +2,8 @@
   #define INC_BOARD
 #include <vector>
 #include "fen.hpp"
+#define wsq 0x001
+#define bsq 0x002
 struct square {
     int x;
     int y;

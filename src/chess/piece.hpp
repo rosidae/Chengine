@@ -1,17 +1,17 @@
 #ifndef INC_PIECE
   #define INC_PIECE
-#define WP 0x01
-#define WN 0x02
-#define WB 0x03
-#define WR 0x04
-#define WQ 0x05
-#define WK 0x06
-#define BP 0x11
-#define BN 0x12
-#define BB 0x13
-#define BR 0x14
-#define BQ 0x15
-#define BK 0x16
+#define WP 0x11
+#define WN 0x12
+#define WB 0x13
+#define WR 0x14
+#define WQ 0x15
+#define WK 0x16
+#define BP 0x21
+#define BN 0x22
+#define BB 0x23
+#define BR 0x24
+#define BQ 0x25
+#define BK 0x26
 #define EMPTY 0x00
 #include "board.hpp"
 
